@@ -1,5 +1,7 @@
 ---
-title: "Untitled"
+title: "Sources"
 format: html
 ---
+
+The primary source I utilized for this project was "https://moneypuck.com/data.htm". This source has NHL stats from 2007 to the present day, offering a wonderful opportunity for those who want to gain insights from hockey analytics. I cleaned the data by removing NULL values and filtering to different teams to gain more narrow information.
 

@@ -4,3 +4,8 @@ author: "Eric Butte"
 format: html
 ---
 
+
+![](panthers-bruins-goals.png)
+
+My project will concern goal scoring in the NHL and insights I can offer to General Managers and front office personnel who are seeking to improve their rosters. The graphic above displays goal scoring heat maps of two teams: the Boston Bruins who missed the playoffs on the left, and the Florida Panthers who won hockey's ultimate prize, the Stanley Cup just a few weeks ago. 
+

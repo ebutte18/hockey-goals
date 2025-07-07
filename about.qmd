@@ -1,5 +1,7 @@
 ---
-title: "Untitled"
+title: "About the author"
 format: html
 ---
+
+My name is Eric Butte, a former college hockey player whose github account can be reached at "https://github.com/ebutte18", and an email which is "ebutte18@gmail.com". My project is concerned with scoring goals in the National Hockey League (NHL) and what insight I can offer to General Managers to improve their rosters. The link to my Github repository is "https://github.com/ebutte18/hockey-goals.git". This project was created as a part of Kane's Data Science Bootcamp, https://bootcamp.davidkane.info/. 
 
