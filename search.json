@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "sources.html",
+    "href": "sources.html",
+    "title": "Sources",
+    "section": "",
+    "text": "The primary source I utilized for this project was “https://moneypuck.com/data.htm”. This source has NHL stats from 2007 to the present day, offering a wonderful opportunity for those who want to gain insights from hockey analytics. I cleaned the data by removing NULL values and filtering to different teams to gain more narrow information."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About the author",
+    "section": "",
+    "text": "My name is Eric Butte, a former college hockey player whose github account can be reached at “https://github.com/ebutte18”, and an email which is “ebutte18@gmail.com”. My project is concerned with scoring goals in the National Hockey League (NHL) and what insight I can offer to General Managers to improve their rosters. The link to my Github repository is “https://github.com/ebutte18/hockey-goals.git”. This project was created as a part of Kane’s Data Science Bootcamp, https://bootcamp.davidkane.info/."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Predicted Hockey Goals",
+    "section": "",
+    "text": "My project will concern goal scoring in the NHL and insights I can offer to General Managers and front office personnel who are seeking to improve their rosters. The graphic above displays goal scoring heat maps of two teams: the Boston Bruins who missed the playoffs on the left, and the Florida Panthers who won hockey’s ultimate prize, the Stanley Cup just a few weeks ago."
+  }
+]
