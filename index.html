@@ -95,6 +95,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./index2.html"> 
+<span class="menu-text">Sam Reinhart Case Study</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About the author</span></a>
   </li>  
@@ -145,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><img src="panthers-bruins-goals.png" class="img-fluid"></p>
-<p>My project will concern goal scoring in the NHL and insights I can offer to General Managers and front office personnel who are seeking to improve their rosters. The graphic above displays goal scoring heat maps of two teams: the Boston Bruins who missed the playoffs on the left, and the Florida Panthers who won hockey’s ultimate prize, the Stanley Cup just a few weeks ago.</p>
+<p>My project will concern goal scoring in the NHL and insights I can offer to General Managers and front office personnel who are seeking to improve their rosters. The graphic above displays goal scoring heat maps of two teams: the Boston Bruins who missed the playoffs on the left, and the Florida Panthers who won hockey’s ultimate prize, the Stanley Cup just a few weeks ago. Using data from moneypuck.com, I have a tremendous amount of data available to explore goal scoring. For the above figure, X variable woul dbe team and the Y variable would be the prevalance of goal scoring mapped on the ice sheet. Immediately, your eyes should be drawn to the Panthers’ ability to score goals in the areas to the diagonal right and left of the crease.</p>
 
 
 
@@ -222,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/ebutte18\.github\.io\/hockey-goals\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

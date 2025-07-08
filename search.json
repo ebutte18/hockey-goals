@@ -4,20 +4,27 @@
     "href": "sources.html",
     "title": "Sources",
     "section": "",
-    "text": "The primary source I utilized for this project was “https://moneypuck.com/data.htm”. This source has NHL stats from 2007 to the present day, offering a wonderful opportunity for those who want to gain insights from hockey analytics. I cleaned the data by removing NULL values and filtering to different teams to gain more narrow information."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About the author",
-    "section": "",
-    "text": "My name is Eric Butte, a former college hockey player whose github account can be reached at “https://github.com/ebutte18”, and an email which is “ebutte18@gmail.com”. My project is concerned with scoring goals in the National Hockey League (NHL) and what insight I can offer to General Managers to improve their rosters. The link to my Github repository is “https://github.com/ebutte18/hockey-goals.git”. This project was created as a part of Kane’s Data Science Bootcamp, https://bootcamp.davidkane.info/."
+    "text": "The primary source I utilized for this project was Money Puck. This source has NHL stats from 2007 to the present day, offering a wonderful opportunity for those who want to gain insights from hockey analytics. I cleaned the data by removing NULL values and filtering to different teams to gain more narrow information."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Predicted Hockey Goals",
     "section": "",
-    "text": "My project will concern goal scoring in the NHL and insights I can offer to General Managers and front office personnel who are seeking to improve their rosters. The graphic above displays goal scoring heat maps of two teams: the Boston Bruins who missed the playoffs on the left, and the Florida Panthers who won hockey’s ultimate prize, the Stanley Cup just a few weeks ago."
+    "text": "My project will concern goal scoring in the NHL and insights I can offer to General Managers and front office personnel who are seeking to improve their rosters. The graphic above displays goal scoring heat maps of two teams: the Boston Bruins who missed the playoffs on the left, and the Florida Panthers who won hockey’s ultimate prize, the Stanley Cup just a few weeks ago. Using data from moneypuck.com, I have a tremendous amount of data available to explore goal scoring. For the above figure, X variable woul dbe team and the Y variable would be the prevalance of goal scoring mapped on the ice sheet. Immediately, your eyes should be drawn to the Panthers’ ability to score goals in the areas to the diagonal right and left of the crease."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About the author",
+    "section": "",
+    "text": "My name is Eric Butte, a former college hockey player whose github account can be reached at Github account, and email. My project is concerned with scoring goals in the National Hockey League (NHL) and what insight I can offer to General Managers to improve their rosters. The link to my Github repository is https://github.com/ebutte18/hockey-goals.git. This project was created as a part of Kane’s Data Science Bootcamp."
+  },
+  {
+    "objectID": "index2.html",
+    "href": "index2.html",
+    "title": "Sam Reinhart Case Study",
+    "section": "",
+    "text": "Sam Reinhart was drafted #2 overall in the 2014 draft by the Buffalo Sabres. Having played on a struggling team that never made the playoffs, Reinhart never scored more than 25 goals in his 7 seasons with the Sabres. He was then traded to the Florida Panthers where he has managed to surpass his total goals in just 4 seasons, highlighted by a career high of 57 in 2023-2024. The graph below displays the amount of goals he has scored with each franchise. It’s important to note that the dataset I utilized did not include the 50 goals he scored from this previous season, 39 in regular season and 11 in playoffs. This brings his total goal count to 192 with the Florida Panthers in just 4 seasons.\n\n\n\n\n\n\n\n\n\nWhat are the reasons for this massive jump in goal scoring? Florida is obviously a better team but I wanted to take a deeper look at what factors were most important in his goals.\nLogstic Regression Model for predicting the probability that a shot results in a goal based on the following factors:\n\\[\n\\log \\left( \\frac{P(\\text{goal} = 1)}{1 - P(\\text{goal} = 1)} \\right) = \\beta_0 + \\beta_1 \\times \\text{shotAngle} + \\beta_2 \\times \\text{shotDistance} + \\beta_3 \\times \\text{shotGeneratedRebound} + \\beta_4 \\times \\text{shotType} + \\beta_5 \\times \\text{isPowerPlay} + \\beta_6 \\times \\text{team}\n\\]\nThe table below displays standard Logistic Regression results with all of the factors that I decided to include in the model.\n\n\n\n\n\n\n\n\nLogistic Regression Results: Predicting Reinhart’s Goals\n\n\nModel includes shot location, type, power play, and team\n\n\nTerm\nEstimate\nStd. Error\nz\np\n\n\n\n\n(Intercept)\n−1.374\n0.247\n−5.570\n0.000\n\n\nshotAngle\n0.001\n0.002\n0.790\n0.432\n\n\nshotDistance\n−0.033\n0.006\n−5.550\n0.000\n\n\nshotGeneratedRebound\n−15.765\n299.605\n−0.050\n0.958\n\n\nshotTypeDEFL\n−0.339\n0.387\n−0.880\n0.381\n\n\nshotTypeSLAP\n0.534\n0.359\n1.490\n0.137\n\n\nshotTypeSNAP\n0.337\n0.280\n1.200\n0.229\n\n\nshotTypeTIP\n−0.069\n0.265\n−0.260\n0.794\n\n\nshotTypeWRAP\n0.534\n0.874\n0.610\n0.541\n\n\nshotTypeWRIST\n−0.087\n0.240\n−0.360\n0.716\n\n\nisPowerPlayTRUE\n0.450\n0.138\n3.250\n0.001\n\n\nteamSabres\n−0.190\n0.133\n−1.430\n0.152\n\n\n\n\n\n\n\nFor easier data to understand, here is a modified table based on variable importance from the same model as above.\n\n\n\n\n\n\n\n\nVariable Importance: Predicting Sam Reinhart’s Goals\n\n\nFrom logistic regression\n\n\nVariable\nRelative Importance\n\n\n\n\nShot Distance\n5.570\n\n\nPower Play\n3.290\n\n\nTeam: Sabres\n1.430\n\n\nShot Angle\n0.820\n\n\nShot Type: DEFL\n0.680\n\n\nShot Type: WRIST\n0.420\n\n\nShot Type: TIP\n0.400\n\n\nShot Type: BACK\n0.310\n\n\nShot Type: SLAP\n0.300\n\n\nShot Type: WRAP\n0.220\n\n\nShot Type: SNAP\n0.080\n\n\nShot Generated Rebound\n0.050\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThere are many takeaways from the bar chart above. The biggest and most important one is that Sam Reinhart’s massive influx in goals is due to him getting opportunities in close proximity to the net as well as powerplay opportunities, which go hand in hand. Both of those factors proved to be more impactful on his goal scoring than switching from the Sabres to the Panthers, as evidenced by the graph. Furthermore, I think the graph illustrates how important net-front skills are for forwards in today’s modern NHL game. Reinhart is not the fastest player on the ice, but he possesses elite hands and IQ around the net, which has allowed him to score so many goals with the Panthers. The graph also seems to dispel the myth in hockey that “shooting for rebounds” is a smart play. Rather, teams should focus on moving the puck to teammates in high scoring areas and execute quick shots on goal."
   }
 ]

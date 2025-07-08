@@ -94,6 +94,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./index2.html"> 
+<span class="menu-text">Sam Reinhart Case Study</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About the author</span></a>
   </li>  
@@ -137,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The primary source I utilized for this project was “https://moneypuck.com/data.htm”. This source has NHL stats from 2007 to the present day, offering a wonderful opportunity for those who want to gain insights from hockey analytics. I cleaned the data by removing NULL values and filtering to different teams to gain more narrow information.</p>
+<p>The primary source I utilized for this project was <a href="https://moneypuck.com/data.htm">Money Puck</a>. This source has NHL stats from 2007 to the present day, offering a wonderful opportunity for those who want to gain insights from hockey analytics. I cleaned the data by removing NULL values and filtering to different teams to gain more narrow information.</p>
 
 
 
@@ -214,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/ebutte18\.github\.io\/hockey-goals\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

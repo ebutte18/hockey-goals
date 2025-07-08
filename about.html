@@ -94,6 +94,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./index2.html"> 
+<span class="menu-text">Sam Reinhart Case Study</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About the author</span></a>
   </li>  
@@ -137,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>My name is Eric Butte, a former college hockey player whose github account can be reached at “https://github.com/ebutte18”, and an email which is “ebutte18@gmail.com”. My project is concerned with scoring goals in the National Hockey League (NHL) and what insight I can offer to General Managers to improve their rosters. The link to my Github repository is “https://github.com/ebutte18/hockey-goals.git”. This project was created as a part of Kane’s Data Science Bootcamp, https://bootcamp.davidkane.info/.</p>
+<p>My name is Eric Butte, a former college hockey player whose github account can be reached at <a href="https://github.com/ebutte18">Github account</a>, and <a href="ebutte18@gmail.com">email</a>. My project is concerned with scoring goals in the National Hockey League (NHL) and what insight I can offer to General Managers to improve their rosters. The link to my Github repository is <a href="https://github.com/ebutte18/hockey-goals.git">https://github.com/ebutte18/hockey-goals.git</a>. This project was created as a part of <a href="https://bootcamp.davidkane.info/">Kane’s Data Science Bootcamp</a>.</p>
 
 
 
@@ -214,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/ebutte18\.github\.io\/hockey-goals\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
